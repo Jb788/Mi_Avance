@@ -1,0 +1,150 @@
+git status  ===================== que proyectos tenemos
+
+git add index.html ============== Preparando para lanzar el seguimiento 
+
+git commit -m "Comienzo del proyecto"  =========== Sacando la primera captura del archivo
+
+git config --global iser.name "Jose Cruz" ========configuraciones globales
+
+git status -s  =============================== Modificaciones o no
+
+git log --online =================== Obtener todos los listados
+
+git rm --cached index.html ========== Remover de la area de preparacion
+
+git add .
+
+CONECTAR DE MANERA REMOTA DE GITHUB
+git remote add origen "https://github.com/Jb788/pruebagit.git"
+
+origen =========== es un nombre para el repositorio remoto 
+
+
+
+git reset --hard  01cd54 =================== Restaurar a la captura anterior
+
+
+
+
+GITHUB  repositorio
+git push -u origen master =================== Envia al repositorio 
+
+
+Clone
+git clone https://github.com/Jb788/pruebagit.git ============= copiar el repositorio copiar todo
+
+PULL
+
+
+
+Aquí están las configuraciones globales de lo q estaríamos haciendo
+C:\Users\TuUsuario\.gitconfig
+
+
+git branch -m main   ========= Cambia el nombre de la rama 
+git log              ========= Ver el historial del commit 
+git checkout hellogit2.py ==== actualiza la ultima fotografía q guarde
+git reset            ========= sirve para quitar del staging
+git log --graph      ========= sirve para ver la rama en dibujo
+git log --graph --pretty=oneline ===== lo veo en una linea
+git log --graph --decorate --all --oneline ===== solo veo el comentario y el id
+git config --global alias.tree "log --graph --decorate --all --oneline"  ===== sirve para crear un alias y resumir el código 
+touch .gitignore   ============ crear el archivo y dentro de el escribir **/.DS_Store     o el nombre del archivo
+git diff   ==================== Te dice que a aparecido y aparece en las líneas
+$ git checkout fb994cbd2dc00fb8a693796c549d34344e4cced8 ====== ir a esa parte de id del código
+git checkout HEAD  ============ Esta es la nueva cabeza del seguimiento 
+el HEAD es donde nos situamos en la linea de tiempo
+git reset --hard  ============= Esto ire al fichero q quiero ir pero eliminare todo lo de adelante
+git reflog          =========== Este es el historial de todas las cosas que hice
+git checkout master   ========= Esto iremos a al cabeza de arriba
+
+git reset --hard <498ddf> ===== nos lleva a la cabeza y al finaly volvemos al finaly el head mas funciona atra y adelante
+git tag clase_1  ============== añadir una etiqueta al punto 
+git tag            ============ para saber que tipos de tags hay en el repositorio
+git checkout tags/clase_1 ===== esto nos movemos de tags
+
+---------------------RAMAS-------------------
+git branch login =============== creación de rama 
+git switch login =============== Cambios de ramas
+git merge master =============== Combina la rama depende de cual rama nombre 
+esc + :q
+------------------conflicto-------------------
+git marge master =============== unimos las dos ramas y hay problemas
+eliminamos lo q conflictúa un problema------------------
+-----------------Guardar cambio en local ---------------
+git stash       ================ No quiero hacer commit pero guárdalo hasta mientra
+git stash list  ================ Para saber que esta en la lsita de stash
+git stash pop   ================ trae todo lo que guarde en la lista en la lista de stash
+git stash drop  ================ eliminina el stash
+-----------------Te dice si hay conflictos------------
+git diff    ==================== si la linea ah sido editado o alterada te sale si +, -depende
+git diff login   =============== Que cambios hay en la rama de login o que se esta editando 
+----------------- Esta es la eliminación de una rama ------------------
+git branch -d login  =========== Esta es la eliminación de la rama 
+git branch           =========== Muestra el nombre de la rama que hay existentes
+
+------------------------------GITHUB-----------------------
+
+git remote add origin https://github.com/Jb788/hello-git.git   ======== Configurar con mi repositorio con que repositorio esta emparejado
+git push -u origin main  ================================ El punto donde me encuentro es el origin quiero hacer push a la rama principal main
+
+----------------------------Subir a GITHUB---------------------------------
+
+git push                ================================= Subir el archivo a la repo
+git fetch               ================================= Descargar el local el historial sin descargar los cambios
+git pull                ================================= Se descarga el historial y también los cambios
+git config pull.rebase false  =========================== Marge de las repos
+git pull origen main    ================================= Solo se descargue el main
+git clone <https,ssh,gith> ============================== Esto es clonar en otro dispositivo
+
+--------------------------- Como funciona el flujo colaborativo ----------------------
+Desde git hub ir al repositorio y si queremos hacer algún cambio y no tenemos permisos solo se editara en el repositorio local y no en la nube
+para eso tenemos que ir a la repo y hacer un ----fork---- del repositorio y en esta tenemos q hacer los cambios necesarios cosa q se ira a nuestro repositorio 
+ 
+---------------------------Flujo colaborativo ------------------- Enviar al perfil original ---------------
+
+Crear el archivo necesario que veamos que se puede hacer y si ya esta todo poner sincronizado  
+--Enviar el archivo y sincronización para enviar al perfil del repositorio original
+Sync fork 
+
+---------------------------Contribuir al perfil original-----------------
+ir al repositorio de GitHub
+
+Contribute
+
+y los commit que tenemos se pasa al repositorio original
+
+
+ir a Pull requests 
+
+
+------------------------- Conflictos en PR ------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git config --global user.name "Jose Cruz"
+git config --global user.email "sadlfh@gmail.com"
+git config --list   ==============================configuraciones hechas
+git config --global --list =======================ver configuraciones de global,local,system
+git config --list -show-scope ==================== Ver cada configuración de donde es global, etc.
+git init               =========================== Inicializar en donde esta la carpeta
+git status             =========================== Verifica si contiene un repositorio y lo archivos q fueron modificado y creados
+touch index.html        ========================== Crea el arcivo como se lo especifico
+git add *.js            ========================== Sube todos los archivos q terminan ej .js
+git add .               ========================== sube todo lo q esta en la raíz
+git reset index.html    ========================== Saca el archivo de staging 
+git commit -m "Tomando fotagrafias del area de staging"
+git commit -a -m 'Aniadir archivo modificado'  === El archivo a sido subido sin la necesidad del add
+git commit -am 'Aniadir archivo modificado'  === El archivo a sido subido sin la necesidad del add
+

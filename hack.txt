@@ -1,0 +1,4 @@
+troyanos de puerta trasera o  troyano del tipo backdoor 
+troyanos de negacion de servicios = son zombies, negacion de servicios de sitio web ddos
+ransonwher = secuestra datos 
+troyanos espias = teclas apretadas, capturas de pantalla, suesctrar datos 

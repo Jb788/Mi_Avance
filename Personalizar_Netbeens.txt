@@ -1,0 +1,35 @@
+Personalizar el netbeens
+tools-options-appearance-look and feel-FlatLaf dark   ======= ID negro apariencia
+descargar apariencias 
+theme netbeans 
+tools-options-fonts & colors-import-<marcamos.zip>     ====== Esto cambia el apache por internet 
+
+------------letras------------
+tools-options-fonds & colors- <>        ===================== cambiar la fuente lo  mismo podemos buscar por internet como fuentes de letras --- Extraer las fuentes e ir a configuraciones, configuracion de fuentes  y lo buscamos en netbeens
+
+------------ Autocompletar ----------
+
+tools-options-editor-Code Completion ====== en Lenguaje poner Java y marcar casillas Auto popup y Sudwaord 
+
+
+
+----------- Quitar lo que sale en netbeens las partes que salen por demas ------------
+
+tools-templete-java-java main class-open in editor
+borrar
+
+<#include "${project.licensePath}">
+
+/**
+ *
+ * @author ${user}
+ */
+
+
+
+
+    /**
+     * @param args the command line arguments
+     */
+
+// TODO code application logic here

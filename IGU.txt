@@ -1,0 +1,49 @@
+Ojito es para verlo 
+el JFrame trabajamos con esto
+el JPanel es 
+IGU = Aqui solo va las interfaces
+Logica = Ejecutar el programa y llamar a la interfaz grafica
+persistencia = se encarga para guardar en una base de datos
+
+f6 = ejecuta mi codigo de netbeens
+doble click en cada grafica = para entrar al codigo
+
+
+Como poner play verde solo para el main =  ir al jframe en souerces y borrar su main
+
+
+<<<<<<<<<<<<<<< Tipos de clases >>>>>>>>>>
+Nuevo documento/Swing GUI forms/
+
+
+
+
+
+
+Panel ======== Es un contenedor donde podemos escribir
+label ======== Es para escribir texto 
+Text Field ==== Es para escribir el contenido
+Button  ====== Es para agregar un botón
+Separator === Es para dar una separación con una linea
+Password Fiel === Es para que a al hora de escribir la contrasenia se vea *******
+
+
+
+<<<<<<<<<<<<<<<<<Propiedades >>>>>>>>>>>>>>>>>>>>>
+border = cambia los bordes        = Matte Border(arriba, izquierda, abajo, derecha)
+
+
+<<<<<<<<<<<<<<<<< TRUCOS  >>>>>>>>>>>>>>>>>>
+Para que dos paneles se unan y se pueda juntar es lo siguiente
+crear un panel toda la pantalla
+click derecho al panel inferior---set layout ---absolute layaout
+
+
+
+<<<<<<<<<<<<<<<<<< IMAGENES >>>>>>>>>>>>>>
+Hacerlo mediante label
+Hacemos desde las propiedades de la derecha-properties-icon-tres puntitos
+
+
+<<<<<<<<<<<<<<<< CENTRAR IMAGENES O LETRA >>>>>>>>>>>>
+Desde propiedades lado izquierdo damos en horizontalAlignment/center

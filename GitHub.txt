@@ -39,11 +39,12 @@ git bash
 $ ssh-keygen -t ed25519 -C "jbcruz88888@gmail.com" ========== creamos una llave
 nos pedirá la ruta 
 /c/Users/jbcru/.ssh/id_jb8888 =============diferentes maneras de hacer la ruta buscar lo mas conveniente crea 2 archivos
-contr=enter
-eval `ssh-agent -s`  === Devuelve un string esta arriba en la compu
-$ ssh-add c:/Users/jbcru/.ssh/id_jb8888.pub   ====== agrega las llaves
-
-
+contra=enter
+eval `ssh-agent -s`  === Devuelve un string esto verifica el agente
+$ ssh-add c:/Users/jbcru/.ssh/id_jb8888   ====== agrega las llaves
+Agregamos las llaves publicas al gtihub-keys
+ssh -T git@github.com   == Probamos la conexión si o si para q se haga la primera conexión
+git push -u origin main == para subir proyectos 
 
 <<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
 

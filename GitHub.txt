@@ -19,6 +19,8 @@ git remote add origen "https://github.com/Jb788/pruebagit.git"
 
 origen =========== es un nombre para el repositorio remoto 
 
+
+
 <<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
 <<<<<<<<<<<<<<<<<<<<<<<< Autentificación acerca de sobre SSH >>>>>>>>>>>>>>>>>>
 de forma manual buscar en la raíz del SO la carpeta oculta .ssh    C:\Users\[nombre_de_usuario]\.ssh\
@@ -29,9 +31,24 @@ ssh-keygen -t ed25519 -C "your_email@example.com"   ===========seguir los pasos 
 
 Get-Service -Name ssh-agent | Set-Service -StartupType Manual ================ obtiene el servicio ssh | (toma el resultado y lo pasa al siguiente) cambia a manual el servicio 
 Start-Service ssh-agent ========= Inicia el servicio e forma manual 
+ssh-add c:/Users/jbcru/.ssh/id_jb88 === Hemos asociado esta llave a nuestro llavero para que reconozca
+
+git bash
+
+/c/Users/jbcru/.ssh/id_jb88
+$ ssh-keygen -t ed25519 -C "jbcruz88888@gmail.com" ========== creamos una llave
+nos pedirá la ruta 
+/c/Users/jbcru/.ssh/id_jb8888 =============diferentes maneras de hacer la ruta buscar lo mas conveniente crea 2 archivos
+contr=enter
+eval `ssh-agent -s`  === Devuelve un string esta arriba en la compu
+$ ssh-add c:/Users/jbcru/.ssh/id_jb8888.pub   ====== agrega las llaves
+
 
 
 <<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+
+
+
 
 git reset --hard  01cd54 =================== Restaurar a la captura anterior
 

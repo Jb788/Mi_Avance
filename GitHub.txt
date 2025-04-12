@@ -14,12 +14,24 @@ git rm --cached index.html ========== Remover de la area de preparacion
 
 git add .
 
-CONECTAR DE MANERA REMOTA DE GITHUB
+<<<<<<<<<<<<<<<<<CONECTAR DE MANERA REMOTA DE GITHUB>>>>>>>>>>
 git remote add origen "https://github.com/Jb788/pruebagit.git"
 
 origen =========== es un nombre para el repositorio remoto 
 
+<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<< Autentificación acerca de sobre SSH >>>>>>>>>>>>>>>>>>
+de forma manual buscar en la raíz del SO la carpeta oculta .ssh    C:\Users\[nombre_de_usuario]\.ssh\
 
+ls -al ~/.ssh   =========== para ver una lista de las claves ssh
+para crear copilamos el siguiente comando
+ssh-keygen -t ed25519 -C "your_email@example.com"   ===========seguir los pasos de la contraseña
+
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual ================ obtiene el servicio ssh | (toma el resultado y lo pasa al siguiente) cambia a manual el servicio 
+Start-Service ssh-agent ========= Inicia el servicio e forma manual 
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>
 
 git reset --hard  01cd54 =================== Restaurar a la captura anterior
 
